@@ -1,0 +1,51 @@
+{
+  "name": "focus",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.4",
+    "@ckeditor/ckeditor5-build-balloon": "^19.0.0",
+    "@ckeditor/ckeditor5-build-classic": "^19.0.1",
+    "@ckeditor/ckeditor5-paste-from-office": "^19.0.1",
+    "@ckeditor/ckeditor5-react": "^2.1.0",
+    "@material-ui/core": "^4.9.11",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.50",
+    "@material-ui/styles": "^4.9.10",
+    "@types/classnames": "^2.2.10",
+    "@types/diff": "^4.0.2",
+    "@types/emoji-mart": "^3.0.1",
+    "@types/react-router-dom": "^5.1.4",
+    "bcrypt": "^4.0.1",
+    "capture-website": "^1.0.0",
+    "classnames": "^2.2.6",
+    "consistent-color-generation": "^0.4.0",
+    "diff": "^4.0.2",
+    "emoji-mart": "^3.0.0",
+    "get-urls": "^9.2.0",
+    "meteor-node-stubs": "^1.0.0",
+    "moment": "^2.25.3",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-emoji-render": "^1.2.4",
+    "react-moment": "^0.9.7",
+    "react-router-dom": "^5.1.2"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.ts"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "@types/meteor": "^1.4.42",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6"
+  }
+}
